@@ -13,6 +13,13 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Make ports available to the world outside this container
 EXPOSE 8080
 EXPOSE 8081
+EXPOSE 8082
+EXPOSE 8083
+EXPOSE 8084
+EXPOSE 8085
+EXPOSE 8086
+EXPOSE 8087
+EXPOSE 8088
 
 # Run app.py when the container launches
 CMD ["/bin/sh", "wrapper.sh"]
