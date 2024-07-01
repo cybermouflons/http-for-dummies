@@ -3,7 +3,7 @@ FROM python:3.10-slim
 
 # Connect package to repository
 LABEL org.opencontainers.image.source=https://github.com/cybermouflons/http-for-dummies
-LABEL org.opencontainers.image.description="Exercise 1 - Banner Grabbing"
+LABEL org.opencontainers.image.description="Exercise 2 - 404"
 LABEL org.opencontainers.image.licenses=MIT
 
 # Set the working directory to /app
@@ -16,7 +16,7 @@ COPY . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Make ports available to the world outside this container
-EXPOSE 8080
+EXPOSE 8081
 
 # Run application
 CMD ["python", "/app/app.py"]

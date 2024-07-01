@@ -3,7 +3,7 @@ FROM python:3.10-slim
 
 # Connect package to repository
 LABEL org.opencontainers.image.source=https://github.com/cybermouflons/http-for-dummies
-LABEL org.opencontainers.image.description="Exercise 1 - Banner Grabbing"
+LABEL org.opencontainers.image.description="Exercise 6 - HTTP Versions"
 LABEL org.opencontainers.image.licenses=MIT
 
 # Set the working directory to /app

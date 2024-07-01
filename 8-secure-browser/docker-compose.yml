@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/8-secure-browser:latest
+    ports:
+      - 8087:8087
+

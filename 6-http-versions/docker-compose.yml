@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/6-http-versions:latest
+    ports:
+      - 8085:8085
+

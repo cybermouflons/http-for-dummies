@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/9-virtual-hosts:latest
+    ports:
+      - 8088:8088
+

@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/4-know-your-verbs:latest
+    ports:
+      - 8083:8083
+

@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/5-everyone-gets-a-cookie:latest
+    ports:
+      - 8084:8084
+

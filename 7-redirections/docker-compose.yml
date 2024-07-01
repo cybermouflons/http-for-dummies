@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/7-redirections:latest
+    ports:
+      - 8086:8086
+

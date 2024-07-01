@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: ghcr.io/cybermouflons/2-404:latest
+    ports:
+      - 8081:8081
+
