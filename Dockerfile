@@ -10,6 +10,12 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
+# Install supervisor
+RUN apt-get update && apt-get install -y supervisor
+
+# Copy the supervisor configuration file
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
 # Make ports available to the world outside this container
 EXPOSE 8080
 EXPOSE 8081
@@ -21,5 +27,6 @@ EXPOSE 8086
 EXPOSE 8087
 EXPOSE 8088
 
-# Run app.py when the container launches
-CMD ["/bin/sh", "wrapper.sh"]
+# Run supervisor when the container launches
+CMD ["/usr/bin/supervisord"]
+
