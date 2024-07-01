@@ -1,6 +1,10 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10-slim
 
+LABEL org.opencontainers.image.source=https://github.com/cybermouflons/http-for-dummies
+LABEL org.opencontainers.image.description="HTTP for Dummies exercises"
+LABEL org.opencontainers.image.licenses=MIT
+
 # Set the working directory to /app
 WORKDIR /app
 
